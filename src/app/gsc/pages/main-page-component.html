@@ -1,0 +1,13 @@
+<h1>GSC Main Page Component</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <app-gsc-list [characterList]="characters"
+                  (onDeleteById)="onDeleteCharacterById($event)"></app-gsc-list>
+  </div>
+
+  <div class="col">
+    <app-gsc-add-character (onNewCharacter)="onNewCharacter($event)"></app-gsc-add-character>
+  </div>
+</div>
